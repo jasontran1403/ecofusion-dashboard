@@ -82,8 +82,10 @@ body {
 }
 body {
   min-height: 100svh;
-  background: url("/images/BG_ECO.jpg");
+  background: url("/images/BG_ECO.jpg") no-repeat center center;
+  background-size: cover; /* Ensures the image covers the entire screen */
 }
+
 .floatleft {
   float: left;
 }

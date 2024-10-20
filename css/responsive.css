@@ -330,8 +330,11 @@
  
 /* small mobile :320px. */
 @media (max-width: 767px) {
+	.nft {
+		width: 100%;
+	}
 	.table-row {
-		width: 95%;
+		width: 100%;
 	  }
 	.container {width:100svw}
 	
