@@ -8,7 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- favicon
             ============================================ -->
-    <link rel="icon" href="images/logo_menu.png" type="image/png" sizes="16x16">
+    <link
+      rel="icon"
+      href="images/logo_menu.png"
+      type="image/png"
+      sizes="16x16"
+    />
 
     <!-- Google Fonts
             ============================================ -->
@@ -132,221 +137,108 @@
     <!-- modernizr JS
             ============================================ -->
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-    <style>
-        li a {
-        color: white!important;
-      }
-      .tree-view {
-        background-color: #fff;
-        border-radius: 5px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        margin: 50px auto;
-        padding: 20px;
-        width: 90svw;
-      }
-
-      .tree-view ul {
-        list-style-type: none;
-        padding-left: 20px;
-      }
-
-      .folder {
-        cursor: pointer;
-        color: #007bff;
-        font-weight: bold;
-      }
-
-      .folder:hover {
-        text-decoration: underline;
-      }
-
-      .folder::before {
-        content: "▶"; /* Default icon for closed folder */
-        display: inline-block;
-        margin-right: 5px;
-        transition: transform 0.3s ease;
-      }
-
-      .folder.open::before {
-        transform: rotate(90deg); /* Rotate icon when open */
-      }
-    </style>
-    <style>
-        .wb-traffic-inner {
-          min-height: 200px; /* Set minimum height */
-          display: flex;
-          flex-direction: column; /* Ensure contents stack vertically */
-          justify-content: center; /* Center contents vertically */
-          padding: 15px; /* Add some padding for aesthetics */
-          margin: 10px;
-          text-align: center;
-          align-items: center;
-          background-color: rgba(
-            255,
-            255,
-            255,
-            0.2
-          ); /* Light transparent background */
-          border-radius: 10px; /* Rounded corners */
-          backdrop-filter: blur(10px); /* Blur effect for the background */
-          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow for depth */
-          transition: background-color 0.3s; /* Smooth transition */
-        }
-  
-        /* Optional: Change the background color on hover */
-        .wb-traffic-inner:hover {
-          background-color: rgba(
-            255,
-            255,
-            255,
-            0.4
-          ); /* Slightly less transparent on hover */
-        }
-  
-        .content {
-          color: white !important;
-          font-size: 36px;
-          font-weight: bolder;
-        }
-  
-        .main-menu-area {
-          margin: 0;
-          margin-bottom: 100px;
-          background-color: transparent;
-          min-height: 70px;
-        }
-  
-        .container {
-          display: flex; /* Use flexbox for alignment */
-          justify-content: center; /* Center the content horizontally */
-        }
-  
-        .nav {
-          display: flex; /* Display the nav as flex */
-          justify-content: center; /* Center the nav items */
-          padding: 0; /* Remove default padding */
-          list-style: none; /* Remove bullet points */
-        }
-  
-        .nav li {
-          margin: 0 15px; /* Add space between the menu items */
-        }
-  
-        .nav a {
-          display: block; /* Make the anchor tags block elements */
-          text-decoration: none; /* Remove underline */
-          color: #333; /* Default text color */
-          border-radius: 5px; /* Rounded corners */
-          transition: background-color 0.3s; /* Smooth background transition */
-          font-size: 24px!important;
-        }
-  
-        .nav a:hover {
-          background-color: rgba(
-            0,
-            123,
-            255,
-            0.1
-          ); /* Background color on hover */
-        }
-      </style>
   </head>
 
   <body>
     <div class="mobile-menu-area">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
-              <div class="mobile-menu">
-                <nav id="dropdown">
-                  <ul class="mobile-menu-nav">
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="/wallet.html">Wallet</a></li>
-                    <li><a href="/transaction.html">Transaction</a></li>
-                    <li><a href="/tree.html">Tree</a></li>
-  
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+            <div class="mobile-menu">
+              <nav id="dropdown">
+                <ul class="mobile-menu-nav">
+                  <li><a href="/index.html">Home</a></li>
+                  <li><a href="/wallet.html">Wallet</a></li>
+                  <li><a href="/transaction.html">Transaction</a></li>
+                  <li><a href="/tree.html">Tree</a></li>
+
+                  <li>
+                    <a data-toggle="collapse" data-target="#Pagemob" href="#"
+                      >Account</a
+                    >
+                    <ul id="Pagemob" class="collapse dropdown-header-top">
+                      <li><a href="/info.html">Info</a></li>
+                      <li><a href="/2fa.html">2FA</a></li>
+                      <li><a href="#">Logout</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Mobile Menu end -->
+    <!-- Main Menu area start-->
+    <div class="main-menu-area mg-tb-40">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <ul class="nav nav-tabs notika-menu-wrap menu-it-icon-pro">
+              <li>
+                <a href="/index.html"> Home</a>
+              </li>
+
+              <li>
+                <a href="/transaction.html">Transaction</a>
+              </li>
+              <li>
+                <a href="/buynft.html">Buy NFT</a>
+              </li>
+              <li>
+                <a href="/stake2ern.html">STAKE2ERN</a>
+              </li>
+              <li>
+                <a href="/account.html">Account</a>
+              </li>
+              <li>
+                <a href="#">Logout</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Main Menu area End-->
+    <!-- Start Status area -->
+
+    <div class="form-element-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="tree-view">
+              <ul>
+                <li>
+                  <span class="folder" onclick="toggle(this)">User1</span>
+                  <ul style="display: none">
+                    <!-- Set initial display to none -->
                     <li>
-                      <a data-toggle="collapse" data-target="#Pagemob" href="#"
-                        >Account</a
-                      >
-                      <ul id="Pagemob" class="collapse dropdown-header-top">
-                        <li><a href="/info.html">Info</a></li>
-                        <li><a href="/2fa.html">2FA</a></li>
-                        <li><a href="#">Logout</a></li>
+                      <span class="folder" onclick="toggle(this)">User1_1</span>
+                      <ul style="display: none">
+                        <!-- Set initial display to none -->
+                        <li>User1_1_1</li>
+                        <li>User1_1_2</li>
                       </ul>
                     </li>
+                    <li>User1_2</li>
                   </ul>
-                </nav>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Mobile Menu end -->
-      <!-- Main Menu area start-->
-      <div
-        class="main-menu-area mg-tb-40"
-        style="margin: 0; margin-bottom: 100px"
-      >
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-              <ul class="nav nav-tabs notika-menu-wrap menu-it-icon-pro">
-                <li>
-                  <a href="/index.html"> Home</a>
                 </li>
                 <li>
-                  <a href="/wallet.html">Wallet</a>
+                  <span class="folder" onclick="toggle(this)">User2</span>
+                  <ul style="display: none">
+                    <!-- Set initial display to none -->
+                    <li>User2_1</li>
+                    <li>User2_2</li>
+                  </ul>
                 </li>
-                <li>
-                  <a href="/transaction.html">Transaction</a>
-                </li>
-                <li>
-                  <a href="/tree.html">Tree</a>
-                </li>
+                <li>User3</li>
               </ul>
             </div>
           </div>
         </div>
       </div>
-    <div class="form-element-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-    <div class="tree-view">
-      <ul>
-        <li>
-          <span class="folder" onclick="toggle(this)">User1</span>
-          <ul style="display: none">
-            <!-- Set initial display to none -->
-            <li>
-              <span class="folder" onclick="toggle(this)"
-                >User1_1</span
-              >
-              <ul style="display: none">
-                <!-- Set initial display to none -->
-                <li>User1_1_1</li>
-                <li>User1_1_2</li>
-              </ul>
-            </li>
-            <li>User1_2</li>
-          </ul>
-        </li>
-        <li>
-          <span class="folder" onclick="toggle(this)">User2</span>
-          <ul style="display: none">
-            <!-- Set initial display to none -->
-            <li>User2_1</li>
-            <li>User2_2</li>
-          </ul>
-        </li>
-        <li>User3</li>
-      </ul>
     </div>
-                </div>
-            </div>
-        </div>
-
     <script>
       function toggle(element) {
         const nextUl = element.nextElementSibling;

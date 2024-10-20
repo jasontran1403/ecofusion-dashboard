@@ -971,6 +971,126 @@ a {
     text-decoration: none;
 }
 
+li a {
+    color: white!important;
+  }
+  .tree-view {
+    background-color: rgb(177, 171, 171);
+    
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+    padding: 20px;
+    width: 90svw;
+  }
+
+  .tree-view ul {
+    list-style-type: none;
+    padding-left: 20px;
+  }
+
+  .folder {
+    cursor: pointer;
+    color: #007bff;
+    font-weight: bold;
+  }
+
+  .folder:hover {
+    text-decoration: underline;
+  }
+
+  .folder::before {
+    content: "▶"; /* Default icon for closed folder */
+    display: inline-block;
+    margin-right: 5px;
+    transition: transform 0.3s ease;
+  }
+
+  .folder.open::before {
+    transform: rotate(90deg); /* Rotate icon when open */
+  }
+</style>
+<style>
+    .wb-traffic-inner {
+      min-height: 200px; /* Set minimum height */
+      display: flex;
+      flex-direction: column; /* Ensure contents stack vertically */
+      justify-content: center; /* Center contents vertically */
+      padding: 15px; /* Add some padding for aesthetics */
+      margin: 10px;
+      text-align: center;
+      align-items: center;
+      background-color: rgba(
+        255,
+        255,
+        255,
+        0.2
+      ); /* Light transparent background */
+      border-radius: 10px; /* Rounded corners */
+      backdrop-filter: blur(10px); /* Blur effect for the background */
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+      transition: background-color 0.3s; /* Smooth transition */
+    }
+
+    /* Optional: Change the background color on hover */
+    .wb-traffic-inner:hover {
+      background-color: rgba(
+        255,
+        255,
+        255,
+        0.4
+      ); /* Slightly less transparent on hover */
+    }
+
+    .content {
+      color: white !important;
+      font-size: 36px;
+      font-weight: bolder;
+    }
+
+    .main-menu-area {
+      margin: 0;
+      margin-bottom: 100px;
+      background-color: transparent;
+      min-height: 70px;
+    }
+
+    .container {
+      display: flex; /* Use flexbox for alignment */
+      justify-content: center; /* Center the content horizontally */
+    }
+
+    .nav {
+      display: flex; /* Display the nav as flex */
+      justify-content: center; /* Center the nav items */
+      padding: 0; /* Remove default padding */
+      list-style: none; /* Remove bullet points */
+    }
+
+    .nav li {
+      margin: 0 15px; /* Add space between the menu items */
+    }
+
+    .nav a {
+      display: block; /* Make the anchor tags block elements */
+      text-decoration: none; /* Remove underline */
+      color: #333; /* Default text color */
+      border-radius: 5px; /* Rounded corners */
+      transition: background-color 0.3s; /* Smooth background transition */
+      font-size: 24px!important;
+    }
+
+    .nav a:hover {
+      background-color: rgba(
+        0,
+        123,
+        255,
+        0.1
+      ); /* Background color on hover */
+    }
+
 .modal-overlay {
   display: none; /* Ẩn overlay theo mặc định */
   position: fixed; /* Ở vị trí cố định */
