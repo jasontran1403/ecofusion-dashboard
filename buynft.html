@@ -12,6 +12,10 @@
       type="image/png"
       sizes="16x16"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
     <!-- favicon
             ============================================ -->
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
@@ -180,7 +184,7 @@
               <li>
                 <a href="/index.html"> Home</a>
               </li>
-              
+
               <li>
                 <a href="/transaction.html">Transaction</a>
               </li>
@@ -205,108 +209,31 @@
     <!-- Start Status area -->
     <div class="notika-status-area">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-            <div
-              class="wb-traffic-inner notika-shadow sm-res-mg-t-30 tb-res-mg-t-30"
-            >
-              <div class="website-traffic-ctn summary">
-                <h2><span class="content">Summary</span></h2>
-                <div class="sumary-detail">
-                  <p class="content">Refferal member</p>
-                  <p class="content value">0</p>
-                </div>
-                <div class="sumary-detail">
-                  <p class="content">Sales network</p>
-                  <div class="number"><p class="content value counter">2900</p><p class="content value">EFT</p></div>
-                </div>
-                <div class="sumary-detail">
-                  <p class="content">Direct bonus</p>
-                  <div class="number"><p class="content value counter">2800</p><p class="content value">EFT</p></div>
-                </div>
-                <div class="sumary-detail">
-                  <p class="content">Indirect bonus</p>
-                  <div class="number"><p class="content value counter">2700</p><p class="content value">EFT</p></div>
-                </div>
-                <div class="sumary-detail">
-                  <p class="content">Direct override bonus</p>
-                  <div class="number"><p class="content value counter">2600</p><p class="content value">EFT</p></div>
-                </div>
-                <div class="sumary-detail">
-                  <p class="content">Indirect orverride bonus</p>
-                  <div class="number"><p class="content value counter">2500</p><p class="content value">EFT</p></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-            <div
-              class="wb-traffic-inner notika-shadow sm-res-mg-t-30 tb-res-mg-t-30"
-              style="display: flex; flex-direction: column"
-            >
-              <div class="website-traffic-ctn summary" style="line-height: 37px;">
-                <h2><span class="content" >Wallet</span></h2>
-                <div class="sumary-detail">
-                  <p class="content">USDT</p>
-                  <p class="content counter value">50000</p>
-                </div>
-                <div class="sumary-detail">
-                  <p class="content">EFT</p>
-                  <p class="content counter value">50000</p>
-                </div>
-                <button class="btn-grad">View transaction</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-            <div
-              class="wb-traffic-inner notika-shadow sm-res-mg-t-30 tb-res-mg-t-30"
-            >
-              <div class="website-traffic-ctn summary" style="line-height: 27px;">
-                <h2><span class="content">Your package</span></h2>
-                <div class="sumary-detail">
-                  <p class="content">NFT X DIAMOND</p>
-                </div>
-                <div class="sumary-detail">
-                  <p class="content">Your Rank</p>
-                  <p class="content value">----</p>
-                </div>
-                <div class="sumary-detail">
-                  <p class="content">Plan Included</p>
-                </div>
-                <div class="sumary-detail">
-                  <p class="content">Maxout percent</p>
-                  <p class="content value">400%</p>
-                </div>
-                <div class="sumary-detail">
-                  <p class="content">Maxout Remainning</p>
-                  <p class="content value">0 EFT / 2,000 EFT</p>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="row nft">
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div
               class="wb-traffic-inner notika-shadow sm-res-mg-t-30 tb-res-mg-t-30"
             >
-              <div class="website-traffic-ctn summary">
-                <h2 class="content">Token Information</h2>
-                <div class="sumary-detail">
-                  <p class="content">Name</p>
-                  <p class="content value">EFT</p>
+              <div class="website-traffic-ctn wallet wallet-info">
+                <div class="wallet-detail">
+                  <img
+                    src="/images/usdt.png"
+                    style="width: 120px; height: 80px"
+                    alt=""
+                  />
+                  <p class="content value counter">100,000</p>
+                  <p class="content">USDT</p>
                 </div>
-                <div class="sumary-detail">
-                  <p class="content">Symbol</p>
-                  <p class="content value">EFT</p>
-                </div>
-                <div class="sumary-detail">
-                  <p class="content">Smart Contract Address</p>
-                  <p class="content value smartcontract" id="smartcontract">
-                    0x3A72d1c47197Cc7DF6d4D28dADbc25dcB09DA55C
-                  </p>
+                <div class="wallet-detail">
+                  <img
+                    src="/images/lg_token.png"
+                    style="width: 120px; height: 80px"
+                    alt=""
+                  />
+                  <p class="content value counter">100,000</p>
+                  <p class="content">EFT</p>
                 </div>
               </div>
-              <div class="toast-container" id="toastContainer"></div>
             </div>
           </div>
         </div>
@@ -316,61 +243,190 @@
 
     <div class="notika-status-area">
       <div class="container">
-        <div class="row table-row">
-          <div class="col-12">
-            <div class="data-table-area">
-              <div class="data-table-list">
-                <div class="basic-tb-hd">
-                  <h2 class="content">Member statistic</h2>
-                  <button class="btn-grad">View members</button>
+        <div class="row nft">
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <div
+              class="wb-traffic-inner notika-shadow sm-res-mg-t-30 tb-res-mg-t-30"
+            >
+              <div class="website-traffic-ctn wallet wallet-info">
+                <div class="wallet-detail">
+                  <p class="content value">NFT X STARTER</p>
+                  <p class="content">0.4% APR everyday</p>
+                  <p class="content">100 EFT</p>
+                  <p class="content">(13.2 USD)</p>
+                  <button class="btn-grad" onclick="openModal('buyModal', 'NFT X STARTER')">
+                    BUY & STAKE2EARN
+                  </button>
                 </div>
-                <div class="table-responsive">
-                  <table id="data-table-basic" class="table table-striped">
-                    <thead>
-                      <tr>
-                        <th><span class="content">Username</span></th>
-                        <th><span class="content">STAKE2EARN</span></th>
-                        <th><span class="content">Type</span></th>
-                      </tr>
-                    </thead>
-                    <tbody class="content">
-                      <tr>
-                        <td>Tiger Nixon</td>
-                        <td>
-                          <span class="counter">13241</span><small> EFT</small>
-                        </td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td><span class="content">Garrett Winters</span></td>
-                        <td>
-                          <span class="counter content">121241</span><small class="content"> EFT</small>
-                        </td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td>Ashton Cox</td>
-                        <td>
-                          <span class="counter">124121</span><small> EFT</small>
-                        </td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td><span class="content">Garrett Winters</span></td>
-                        <td>
-                          <span class="counter content">12415</span><small class="content"> EFT</small>
-                        </td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td>Airi Satou</td>
-                        <td>
-                          <span class="counter">1241</span><small> EFT</small>
-                        </td>
-                        <td></td>
-                      </tr>
-                    </tbody>
-                  </table>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <div
+              class="wb-traffic-inner notika-shadow sm-res-mg-t-30 tb-res-mg-t-30"
+            >
+              <div class="website-traffic-ctn wallet wallet-info">
+                <div class="wallet-detail">
+                  <p class="content value">NFT X STARTER</p>
+                  <p class="content">0.4% APR everyday</p>
+                  <p class="content">100 EFT</p>
+                  <p class="content">(13.2 USD)</p>
+                  <button class="btn-grad" onclick="openModal('buyModal', 'NFT X STARTER')">
+                    BUY & STAKE2EARN
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <div
+              class="wb-traffic-inner notika-shadow sm-res-mg-t-30 tb-res-mg-t-30"
+            >
+              <div class="website-traffic-ctn wallet wallet-info">
+                <div class="wallet-detail">
+                  <p class="content value">NFT X STARTER</p>
+                  <p class="content">0.4% APR everyday</p>
+                  <p class="content">100 EFT</p>
+                  <p class="content">(13.2 USD)</p>
+                  <button class="btn-grad" onclick="openModal('buyModal', 'NFT X STARTER')">
+                    BUY & STAKE2EARN
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <div
+              class="wb-traffic-inner notika-shadow sm-res-mg-t-30 tb-res-mg-t-30"
+            >
+              <div class="website-traffic-ctn wallet wallet-info">
+                <div class="wallet-detail">
+                  <p class="content value">NFT X 123123</p>
+                  <p class="content">0.4% APR everyday</p>
+                  <p class="content">100 EFT</p>
+                  <p class="content">(13.2 USD)</p>
+                  <button class="btn-grad" onclick="openModal('buyModal', 'NFT X 123123')">
+                    BUY & STAKE2EARN
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <div
+              class="wb-traffic-inner notika-shadow sm-res-mg-t-30 tb-res-mg-t-30"
+            >
+              <div class="website-traffic-ctn wallet wallet-info">
+                <div class="wallet-detail">
+                  <p class="content value">NFT X STARTER</p>
+                  <p class="content">0.4% APR everyday</p>
+                  <p class="content">100 EFT</p>
+                  <p class="content">(13.2 USD)</p>
+                  <button class="btn-grad" onclick="openModal('buyModal', 'NFT X STARTER')">
+                    BUY & STAKE2EARN
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <div
+              class="wb-traffic-inner notika-shadow sm-res-mg-t-30 tb-res-mg-t-30"
+            >
+              <div class="website-traffic-ctn wallet wallet-info">
+                <div class="wallet-detail">
+                  <p class="content value">NFT X STARTER</p>
+                  <p class="content">0.4% APR everyday</p>
+                  <p class="content">100 EFT</p>
+                  <p class="content">(13.2 USD)</p>
+                  <button class="btn-grad" onclick="openModal('buyModal', 'NFT X STARTER')">
+                    BUY & STAKE2EARN
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <div
+              class="wb-traffic-inner notika-shadow sm-res-mg-t-30 tb-res-mg-t-30"
+            >
+              <div class="website-traffic-ctn wallet wallet-info">
+                <div class="wallet-detail">
+                  <p class="content value">NFT X STARTER</p>
+                  <p class="content">0.4% APR everyday</p>
+                  <p class="content">100 EFT</p>
+                  <p class="content">(13.2 USD)</p>
+                  <button class="btn-grad" onclick="openModal('buyModal', 'NFT X STARTER')">
+                    BUY & STAKE2EARN
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <div
+              class="wb-traffic-inner notika-shadow sm-res-mg-t-30 tb-res-mg-t-30"
+            >
+              <div class="website-traffic-ctn wallet wallet-info">
+                <div class="wallet-detail">
+                  <p class="content value">NFT X STARTER</p>
+                  <p class="content">0.4% APR everyday</p>
+                  <p class="content">100 EFT</p>
+                  <p class="content">(13.2 USD)</p>
+                  <button class="btn-grad" onclick="openModal('buyModal', 'NFT X STARTER')">
+                    BUY & STAKE2EARN
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <div
+              class="wb-traffic-inner notika-shadow sm-res-mg-t-30 tb-res-mg-t-30"
+            >
+              <div class="website-traffic-ctn wallet wallet-info">
+                <div class="wallet-detail">
+                  <p class="content value">NFT X STARTER</p>
+                  <p class="content">0.4% APR everyday</p>
+                  <p class="content">100 EFT</p>
+                  <p class="content">(13.2 USD)</p>
+                  <button class="btn-grad" onclick="openModal('buyModal', 'NFT X STARTER')">
+                    BUY & STAKE2EARN
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <div
+              class="wb-traffic-inner notika-shadow sm-res-mg-t-30 tb-res-mg-t-30"
+            >
+              <div class="website-traffic-ctn wallet wallet-info">
+                <div class="wallet-detail">
+                  <p class="content value">NFT X STARTER</p>
+                  <p class="content">0.4% APR everyday</p>
+                  <p class="content">100 EFT</p>
+                  <p class="content">(13.2 USD)</p>
+                  <button class="btn-grad" onclick="openModal('buyModal', 'NFT X STARTER')">
+                    BUY & STAKE2EARN
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <div
+              class="wb-traffic-inner notika-shadow sm-res-mg-t-30 tb-res-mg-t-30"
+            >
+              <div class="website-traffic-ctn wallet wallet-info">
+                <div class="wallet-detail">
+                  <p class="content value">NFT X STARTER</p>
+                  <p class="content">0.4% APR everyday</p>
+                  <p class="content">100 EFT</p>
+                  <p class="content">(13.2 USD)</p>
+                  <button class="btn-grad" onclick="openModal('buyModal', 'NFT X STARTER')">
+                    BUY & STAKE2EARN
+                  </button>
                 </div>
               </div>
             </div>
@@ -378,6 +434,174 @@
         </div>
       </div>
     </div>
+
+    <div id="buyModal" class="modal">
+      <div class="modal-content primary-modal">
+        <div class="primary-modal-header">
+          <h3 class="primary-modal-title modal-title">Buy NFT</h3>
+        </div>
+        <div class="modal-body">
+          <div class="card-body p-9">
+            <div class="fs-2hx fw-bold text-center">129123 EFT</div>
+            <div class="fs-4 fw-semibold mb-7 text-center text-primary">
+              Available Balance
+            </div>
+          </div>
+          <div id="form_withdraw_popup">
+            <div class="fv-row">
+                <div class="mt-2">
+                    <label class="form-label fw-semibold fs-6 mb-2">
+                        Payment method
+                    </label>
+                    <div class="position-relative mb-3">
+                        <select class="primary-modal-input w-100" id="paymentMethod" required>
+                            <option value="" disabled selected>Select payment method</option>
+                            <option value="USDT Wallet">USDT Wallet</option>
+                            <option value="EFT Wallet">EFT Wallet</option>
+                        </select>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="centering mt-4">
+              <button class="btn btn-warning" onclick="closeModal('buyModal')">
+                Cancel
+              </button>
+
+              <button type="submit" class="btn btn-success">Confirm</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const toastContainer = document.getElementById("toastContainer");
+
+      function showToast(message) {
+        const toast = document.createElement("div");
+        toast.classList.add("toast");
+        toast.textContent = message;
+        toastContainer.appendChild(toast);
+        console.log(toastContainer);
+        // Show the toast
+        setTimeout(() => {
+          toast.classList.add("show");
+        }, 10);
+
+        // Hide the toast after 3 seconds
+        setTimeout(() => {
+          toast.classList.remove("show");
+          // Remove toast from DOM after animation
+          setTimeout(() => {
+            toast.remove();
+          }, 500);
+        }, 3000);
+      }
+
+      function copy(elementId, message) {
+        const input = document.getElementById(elementId);
+        input.select();
+        document.execCommand("copy");
+        console.log(message);
+        // Hiển thị thông báo đã sao chép
+        showToast(message);
+      }
+
+      function openModal(modalId, nftName) {
+        if (document.getElementById(modalId) === null) return;
+        const modal = document.getElementById(modalId);
+        const modalTitle = modal.querySelector(".modal-title");
+
+        // Update the modal title with the NFT name
+        modalTitle.textContent = `Buy ${nftName}`;
+
+        // Display the modal (you might already have this part)
+        modal.style.display = "block";
+      }
+
+      function closeModal(modalId) {
+        document.getElementById(modalId).style.display = "none";
+      }
+
+      function openActionModal(currencyType, actionType) {
+        // Mở modal tương ứng với hành động và loại tiền tệ
+        if (currencyType === "USDT") {
+          if (actionType === "Deposit") {
+            openModal("depositUSDTModal");
+          } else if (actionType === "Withdraw") {
+            openModal("withdrawUSDTModal");
+          } else if (actionType === "Transfer") {
+            openModal("transferUSDTModal");
+          }
+        } else {
+          if (actionType === "Deposit") {
+            openModal("depositEFTModal");
+          } else if (actionType === "Withdraw") {
+            openModal("withdrawEFTModal");
+          } else if (actionType === "Transfer") {
+            openModal("transferEFTModal");
+          }
+        }
+        closeModal("selectCurrencyModal");
+      }
+
+      function handleAction(actionType) {
+        openModal("selectCurrencyModal");
+
+        // Lắng nghe sự kiện chọn currency
+        document
+          .querySelectorAll("#selectCurrencyModal .card")
+          .forEach((card) => {
+            card.onclick = function () {
+              const currency = this.querySelector(".fw-bold").innerText; // Lấy tên currency
+              openActionModal(currency, actionType); // Mở modal tương ứng
+            };
+          });
+      }
+
+      // Gán sự kiện click cho các nút Deposit, Withdraw và Transfer
+      document
+        .querySelectorAll(".wallet-detail")[0]
+        .children[0].addEventListener("click", function () {
+          handleAction("Deposit");
+        });
+
+      document
+        .querySelectorAll(".wallet-detail")[1]
+        .children[0].addEventListener("click", function () {
+          handleAction("Withdraw");
+        });
+
+      document
+        .querySelectorAll(".wallet-detail")[3]
+        .children[0].addEventListener("click", function () {
+          handleAction("Transfer");
+        });
+
+      document
+        .querySelectorAll(".wallet-detail")[2]
+        .children[0].addEventListener("click", function () {
+          openModal("buyModal"); // Mở Swap modal
+        });
+
+      // Lắng nghe sự kiện nhấp chuột cho toàn bộ tài liệu
+      window.onclick = function (event) {
+        const modal = document.querySelector(".modal"); // Thay đổi nếu bạn có nhiều modal
+        // Kiểm tra xem nhấp chuột có xảy ra bên ngoài modal không
+        if (modal && event.target === modal) {
+          closeModal(modal.id); // Đóng modal nếu nhấp vào vùng tối bên ngoài
+        }
+      };
+
+      // Ngăn không cho modal đóng khi nhấp vào nội dung bên trong
+      document.querySelectorAll(".modal-content").forEach((content) => {
+        content.onclick = function (event) {
+          event.stopPropagation(); // Ngăn chặn sự kiện nhấp chuột tiếp tục tới modal
+        };
+      });
+    </script>
+
     <!-- jquery
 		============================================ -->
     <script src="js/vendor/jquery-1.12.4.min.js"></script>
@@ -431,7 +655,8 @@
     <script src="js/plugins.js"></script>
     <!-- Data Table JS
             ============================================ -->
-
+    <script src="js/data-table/jquery.dataTables.min.js"></script>
+    <script src="js/data-table/data-table-act.js"></script>
     <!-- main JS
             ============================================ -->
     <script src="js/main.js"></script>
@@ -529,64 +754,5 @@
     <!-- main JS
 		============================================ -->
     <script src="js/main.js"></script>
-    <script>
-      const toastContainer = document.getElementById("toastContainer");
-      const smartContractElement = document.getElementById("smartcontract");
-
-      // Function to shorten the smart contract address for small devices
-      function shortenAddress(address) {
-        if (window.innerWidth < 768) {
-          return `${address.trim().slice(0, 4)}...${address.trim().slice(-4)}`;
-        }
-        return address;
-      }
-
-      // Update the smart contract address display on page load
-      smartContractElement.textContent = shortenAddress(
-        smartContractElement.textContent
-      );
-      // Function to create and show toast
-      function showToast(message) {
-        const toast = document.createElement("div");
-        toast.classList.add("toast");
-        toast.textContent = message;
-        toastContainer.appendChild(toast);
-
-        // Show the toast
-        setTimeout(() => {
-          toast.classList.add("show");
-        }, 10);
-
-        // Hide the toast after 3 seconds
-        setTimeout(() => {
-          toast.classList.remove("show");
-          // Remove toast from DOM after animation
-          setTimeout(() => {
-            toast.remove();
-          }, 500);
-        }, 3000);
-      }
-
-      // Event listener for copying smart contract address
-      smartContractElement.addEventListener("click", function () {
-        const smartContractText = this.textContent;
-        navigator.clipboard
-          .writeText(smartContractText)
-          .then(function () {
-            showToast("Smart Contract Address copied to clipboard!");
-          })
-          .catch(function (error) {
-            showToast("Failed to copy address.");
-            console.error("Failed to copy: ", error);
-          });
-      });
-
-      // Optional: Add a resize event listener to update the address if the screen is resized
-      window.addEventListener("resize", function () {
-        smartContractElement.textContent = shortenAddress(
-          smartContractElement.textContent
-        );
-      });
-    </script>
   </body>
 </html>

@@ -1,5 +1,8 @@
 /* Normal desktop :992px. */
 @media (min-width: 992px) and (max-width: 1169px) {
+	.data-table-area {
+		min-width: 1120px!important;
+	}
 	.header-top-area{
 		position:unset;
 	}
@@ -323,10 +326,15 @@
 	}
 }
 
+
  
 /* small mobile :320px. */
 @media (max-width: 767px) {
-	.container {width:300px}
+	.table-row {
+		width: 95%;
+	  }
+	.container {width:100svw}
+	
 	.main-menu-area{
 		display:none;
 	}

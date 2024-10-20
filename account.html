@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>ECOFUSION - DASHBOARD</title>
+    <title>ECOFUSION - ACCOUNT</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
@@ -60,6 +60,10 @@
     <!-- main CSS
             ============================================ -->
     <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
     <!-- style CSS
             ============================================ -->
     <link rel="stylesheet" href="style.css" />
@@ -180,7 +184,7 @@
               <li>
                 <a href="/index.html"> Home</a>
               </li>
-              
+
               <li>
                 <a href="/transaction.html">Transaction</a>
               </li>
@@ -211,30 +215,9 @@
               class="wb-traffic-inner notika-shadow sm-res-mg-t-30 tb-res-mg-t-30"
             >
               <div class="website-traffic-ctn summary">
-                <h2><span class="content">Summary</span></h2>
-                <div class="sumary-detail">
-                  <p class="content">Refferal member</p>
-                  <p class="content value">0</p>
-                </div>
-                <div class="sumary-detail">
-                  <p class="content">Sales network</p>
-                  <div class="number"><p class="content value counter">2900</p><p class="content value">EFT</p></div>
-                </div>
-                <div class="sumary-detail">
-                  <p class="content">Direct bonus</p>
-                  <div class="number"><p class="content value counter">2800</p><p class="content value">EFT</p></div>
-                </div>
-                <div class="sumary-detail">
-                  <p class="content">Indirect bonus</p>
-                  <div class="number"><p class="content value counter">2700</p><p class="content value">EFT</p></div>
-                </div>
-                <div class="sumary-detail">
-                  <p class="content">Direct override bonus</p>
-                  <div class="number"><p class="content value counter">2600</p><p class="content value">EFT</p></div>
-                </div>
-                <div class="sumary-detail">
-                  <p class="content">Indirect orverride bonus</p>
-                  <div class="number"><p class="content value counter">2500</p><p class="content value">EFT</p></div>
+                <div class="wallet-detail">
+                  <p class="content counter">9441</p>
+                  <p class="content value">Sales Network</p>
                 </div>
               </div>
             </div>
@@ -244,17 +227,11 @@
               class="wb-traffic-inner notika-shadow sm-res-mg-t-30 tb-res-mg-t-30"
               style="display: flex; flex-direction: column"
             >
-              <div class="website-traffic-ctn summary" style="line-height: 37px;">
-                <h2><span class="content" >Wallet</span></h2>
-                <div class="sumary-detail">
-                  <p class="content">USDT</p>
-                  <p class="content counter value">50000</p>
+              <div class="website-traffic-ctn summary">
+                <div class="wallet-detail">
+                  <p class="content counter">323</p>
+                  <p class="content value">Refferal</p>
                 </div>
-                <div class="sumary-detail">
-                  <p class="content">EFT</p>
-                  <p class="content counter value">50000</p>
-                </div>
-                <button class="btn-grad">View transaction</button>
               </div>
             </div>
           </div>
@@ -262,56 +239,84 @@
             <div
               class="wb-traffic-inner notika-shadow sm-res-mg-t-30 tb-res-mg-t-30"
             >
-              <div class="website-traffic-ctn summary" style="line-height: 27px;">
-                <h2><span class="content">Your package</span></h2>
-                <div class="sumary-detail">
-                  <p class="content">NFT X DIAMOND</p>
-                </div>
-                <div class="sumary-detail">
-                  <p class="content">Your Rank</p>
-                  <p class="content value">----</p>
-                </div>
-                <div class="sumary-detail">
-                  <p class="content">Plan Included</p>
-                </div>
-                <div class="sumary-detail">
-                  <p class="content">Maxout percent</p>
-                  <p class="content value">400%</p>
-                </div>
-                <div class="sumary-detail">
-                  <p class="content">Maxout Remainning</p>
-                  <p class="content value">0 EFT / 2,000 EFT</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <div
-              class="wb-traffic-inner notika-shadow sm-res-mg-t-30 tb-res-mg-t-30"
-            >
               <div class="website-traffic-ctn summary">
-                <h2 class="content">Token Information</h2>
-                <div class="sumary-detail">
-                  <p class="content">Name</p>
-                  <p class="content value">EFT</p>
-                </div>
-                <div class="sumary-detail">
-                  <p class="content">Symbol</p>
-                  <p class="content value">EFT</p>
-                </div>
-                <div class="sumary-detail">
-                  <p class="content">Smart Contract Address</p>
-                  <p class="content value smartcontract" id="smartcontract">
-                    0x3A72d1c47197Cc7DF6d4D28dADbc25dcB09DA55C
+                <div class="account-information">
+                  <!-- Menu Items -->
+                  <p
+                    style="cursor: pointer"
+                    class="content value"
+                    onclick="openModal('referralModal')"
+                  >
+                    <i
+                      class="fa-solid fa-diagram-project"
+                      style="color: rgb(59, 217, 59); padding-right: 10px"
+                    ></i>
+                    Referral link
                   </p>
+                  <p
+                    style="cursor: pointer"
+                    class="content value"
+                    onclick="openModal('changePasswordModal')"
+                  >
+                    <i
+                      class="fa-solid fa-lock"
+                      style="color: rgb(59, 217, 59); padding-right: 10px"
+                    ></i>
+                    Change password
+                  </p>
+                  <p
+                    style="cursor: pointer"
+                    class="content value"
+                    onclick="openModal('twoFAModal')"
+                  >
+                    <i
+                      class="fa-solid fa-user-lock"
+                      style="color: rgb(59, 217, 59); padding-right: 10px"
+                    ></i>
+                    2FA Install
+                  </p>
+                  <a href="/verify.html">
+                    <p style="cursor: pointer" class="content value">
+                        <i
+                          class="fa-solid fa-user-shield"
+                          style="color: rgb(59, 217, 59); padding-right: 10px"
+                        ></i>
+                        Verify account
+                      </p>
+                  </a>
                 </div>
+                <script>
+                  function openModal(modalId) {
+                    const modal = document.getElementById(modalId);
+                    if (modal) {
+                      modal.style.display = "block";
+                    }
+                  }
+
+                  function closeModal(modalId) {
+                    const modal = document.getElementById(modalId);
+                    if (modal) {
+                      modal.style.display = "none";
+                    }
+                  }
+
+                  // Close modals when clicking outside of them
+                  window.onclick = function (event) {
+                    const modals = document.querySelectorAll(".modal");
+                    modals.forEach((modal) => {
+                      if (event.target === modal) {
+                        closeModal(modal.id);
+                      }
+                    });
+                  };
+                </script>
               </div>
-              <div class="toast-container" id="toastContainer"></div>
             </div>
           </div>
         </div>
       </div>
     </div>
+
     <!-- End Status area-->
 
     <div class="notika-status-area">
@@ -321,8 +326,27 @@
             <div class="data-table-area">
               <div class="data-table-list">
                 <div class="basic-tb-hd">
-                  <h2 class="content">Member statistic</h2>
-                  <button class="btn-grad">View members</button>
+                  <h2 class="content">Members (17)</h2>
+                  <select
+                    id="memberSelect"
+                    class="btn-grad"
+                    onchange="handleSelectChange(this)"
+                  >
+                    <option value="">Select...</option>
+                    <option value="all">All</option>
+                    <option value="referral">Referral</option>
+                    <option value="treeview">Treeview</option>
+                  </select>
+                  <script>
+                    function handleSelectChange(selectElement) {
+                      const selectedValue = selectElement.value;
+
+                      if (selectedValue === "treeview") {
+                        window.location.href = "/tree.html"; // Navigate to the Treeview page
+                      }
+                      // You can add other actions for "All" or "Referral" as needed
+                    }
+                  </script>
                 </div>
                 <div class="table-responsive">
                   <table id="data-table-basic" class="table table-striped">
@@ -344,7 +368,8 @@
                       <tr>
                         <td><span class="content">Garrett Winters</span></td>
                         <td>
-                          <span class="counter content">121241</span><small class="content"> EFT</small>
+                          <span class="counter content">121241</span
+                          ><small class="content"> EFT</small>
                         </td>
                         <td></td>
                       </tr>
@@ -358,7 +383,8 @@
                       <tr>
                         <td><span class="content">Garrett Winters</span></td>
                         <td>
-                          <span class="counter content">12415</span><small class="content"> EFT</small>
+                          <span class="counter content">12415</span
+                          ><small class="content"> EFT</small>
                         </td>
                         <td></td>
                       </tr>
@@ -378,6 +404,256 @@
         </div>
       </div>
     </div>
+
+    <!-- Modals -->
+    <div id="referralModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Referral Link</h3>
+          <span class="close" onclick="closeModal('referralModal')"
+            >&times;</span
+          >
+        </div>
+        <div class="modal-body">
+          <p class="fs-6 fw-semibold py-4 m-0">
+            Copy this link and share to your friends
+          </p>
+          <div class="d-flex">
+            <input
+              id="referral_link"
+              type="text"
+              class="primary-modal-input"
+              value="http://ecofusion.io/ref/Vietnam268"
+            />
+            <div
+              class="primary-button"
+              onclick="copy('referral_link','Your link has been copied')"
+            >
+              <div class="text-center" style="cursor: pointer;">
+                <i class="fa-regular fa-copy ml-1 mr-1"></i> Copy link
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="changePasswordModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Change Password</h3>
+          <span class="close" onclick="closeModal('changePasswordModal')"
+            >&times;</span
+          >
+        </div>
+        <div class="modal-body">
+          <div id="form_update_pw">
+            <form
+              method="post"
+              id="formChangePassword"
+              novalidate="novalidate"
+              autocomplete="off"
+            >
+              <input type="hidden" name="act" value="save" />
+
+              <!--begin::Main wrapper-->
+              <div class="fv-row">
+                <!--begin::Wrapper-->
+                <div class="mb-1">
+                  <!--begin::Label-->
+                  <label class="form-label fw-semibold fs-6 mb-2">
+                    Current Password
+                  </label>
+                  <!--end::Label-->
+                  <!--begin::Input wrapper-->
+                  <div class="position-relative mb-3">
+                    <input
+                      class="primary-modal-input w-100"
+                      type="password"
+                      id="password"
+                      name="OldPassword"
+                      maxlength="50"
+                      minlength="8"
+                      required=""
+                      data-msg-required="*"
+                      data-msg-minlength="From 6 to 50 characters"
+                      placeholder="Enter current password"
+                    />
+                  </div>
+                  <!--end::Input wrapper-->
+                </div>
+                <!--end::Wrapper-->
+              </div>
+              <!--end::Main wrapper-->
+              <!--begin::Main wrapper-->
+              <div class="fv-row mt-2" data-kt-password-meter="true">
+                <!--begin::Wrapper-->
+                <div class="mb-1">
+                  <!--begin::Label-->
+                  <label class="form-label fw-semibold fs-6 mb-2">
+                    New Password
+                  </label>
+                  <!--end::Label-->
+                  <!--begin::Input wrapper-->
+                  <div class="position-relative mb-3">
+                    <input
+                      class="primary-modal-input w-100"
+                      type="password"
+                      name="NewPassword"
+                      autocomplete="off"
+                      maxlength="50"
+                      minlength="8"
+                      required=""
+                      data-msg-required="*"
+                      data-msg-minlength="Please enter at least 8 characters"
+                      placeholder="Enter new password"
+                    />
+                  </div>
+                  <!--end::Input wrapper-->
+                </div>
+                <!--end::Wrapper-->
+              </div>
+              <div class="fv-row mt-2" data-kt-password-meter="true">
+                <!--begin::Wrapper-->
+                <div class="mb-1">
+                  <!--begin::Label-->
+                  <label class="form-label fw-semibold fs-6 mb-2">
+                    Confirm Password
+                  </label>
+                  <!--end::Label-->
+                  <!--begin::Input wrapper-->
+                  <div class="position-relative mb-3">
+                    <input
+                      class="primary-modal-input w-100"
+                      type="password"
+                      name="ConfirmNewPassword"
+                      autocomplete="off"
+                      maxlength="50"
+                      minlength="8"
+                      required=""
+                      data-msg-required="*"
+                      data-msg-minlength="Please enter at least 8 characters"
+                      placeholder="Enter new password"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="centering mt-4">
+                <button type="submit" class="primary-button w-100">
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="twoFAModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>2FA Installation</h3>
+          <span class="close" onclick="closeModal('twoFAModal')">&times;</span>
+        </div>
+        <div class="modal-body">
+          <div id="form2fa">
+            <h5>Enable Two-factor Authentication</h5>
+            <br />
+            <!--end::Heading-->
+            <!--begin::Description-->
+            <div class="fw-semibold fs-6 mb-10">
+              Using an Google Authetication app scan this QR code
+              <div class="pt-5 text-center">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJ8AAACfAQAAAADPYDZNAAACVUlEQVR4nOWWMa6sMAxFjSjSwQYisY102RJsAJgNwJbSZRuRsgHoUkT43zDDe8Vv4l88PemjEZo5GkW277Ud4r+fi/4XeBAtiUai3ofZaqJBBE/OS4qH0aQymbywEDo923a1w2WGzeRRieGU4slhNqFP+h/gkoaTqfF6cnLIeXLxUsPp9Wi/06yEqOeE057PV5ErIZ7TtajGYdvTf0tcCS+FMHSfkFG7mtxZGTxUZE+dzV2RI3ISQoOC6MUFwJVikVUGoQXvSXeW5pKXDLLHmaG5Mzos/sMieNFwqNA75BJXE7f7zHrIxUW8e7QDrBgPksHLlJrMNm4GcsTrrVE9VOhf+DC+oKbK4/vMaogKsGPYYDbtYeKLpRDxBDIYIEXKR6NayD6ePpQWUDSa0LAMno4I51jCT3wXw1INDEA4qt3gJZJCPbFGK40q7ozvQshFi02VeEDeVqyHmCFkM90ZvfwnIwmEDWBm3ghqtpdiEUQfNSkvPqIjNqsfjWphcTKhF+DhgIy2L3vXwrw43RRREBJm0SCCXNLJo9Wd4tUSBpEI3l7Cwgodxhdh/svgZQfm3Ls8Gt0zopLCPFMuK0PR5D4h1cODeHcQFI0MMwcpZNjYY3mF0fILTnYyCA9Ax64MAex9/YmzGp6pbO3dE6l3F7MI4jlsIdibqO0zk2vhfV/C2MTKzlPCWwZxZ5gJ1cCZunF4swxiafq29G+5MOA9yGHGVW1ijCBsXpZCxLOWCw88+WRUD8t9CR3U7kxTaq8nzUqIes6G+vvacxZpBhH8sbv3r4N/AFL0owgNlPbPAAAAAElFTkSuQmCC"
+                  class="mw-150px mb-3"
+                />
+              </div>
+            </div>
+            <div
+              class="notice d-flex bg-light-warning rounded border-warning border border-dashed mb-10 p-6"
+            >
+              <div class="d-flex flex-stack flex-grow-1">
+                <div class="fw-semibold text-center">
+                  <div class="fs-6">
+                    If you having trouble using the QR code, select manual entry
+                    on your app, and enter this code:
+                    <div class="fw-bold text-white pt-2">
+                      HA2DKNCXIE4DMWCTJA2Q
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--end::Notice-->
+            <!--begin::Form-->
+            <form
+              class="form fv-plugins-bootstrap5 fv-plugins-framework"
+              method="post"
+              id="changeSecurityPin"
+              novalidate="novalidate"
+              autocomplete="off"
+            >
+              <input type="hidden" name="status" value="true" />
+              <div class="fv-row">
+                <!--begin::Wrapper-->
+                <div class="mt-2">
+                  <!--begin::Label-->
+                  <label class="form-label fw-semibold fs-6 mb-2">
+                    Login password
+                  </label>
+                  <!--end::Label-->
+                  <!--begin::Input wrapper-->
+                  <div class="position-relative mb-3">
+                    <input
+                      class="primary-modal-input w-100"
+                      type="password"
+                      id="code"
+                      name="Password"
+                      placeholder="Enter Login Password"
+                    />
+                  </div>
+                  <!--end::Input wrapper-->
+                </div>
+                <div class="mt-2">
+                  <!--begin::Label-->
+                  <label class="form-label fw-semibold fs-6 mb-2">
+                    Authentication Code
+                  </label>
+                  <!--end::Label-->
+                  <!--begin::Input wrapper-->
+                  <div class="position-relative mb-3">
+                    <input
+                      class="primary-modal-input w-100"
+                      type="text"
+                      id="code"
+                      name="2faPasscode"
+                      value=""
+                      required=""
+                      data-msg-required="*"
+                      maxlength="6"
+                      placeholder="Enter Authentication Code"
+                    />
+                  </div>
+                  <!--end::Input wrapper-->
+                </div>
+                <!--end::Wrapper-->
+              </div>
+              <!--begin::Actions-->
+              <div class="centering mt-4">
+                <button type="submit" class="primary-button w-100">
+                  Submit
+                </button>
+              </div>
+            </form>
+            <!--end::Form-->
+            <!--end::Options-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="toast-container" id="toastContainer"></div>
     <!-- jquery
 		============================================ -->
     <script src="js/vendor/jquery-1.12.4.min.js"></script>
@@ -565,6 +841,15 @@
             toast.remove();
           }, 500);
         }, 3000);
+      }
+
+      function copy(elementId, message) {
+        const input = document.getElementById(elementId);
+        input.select();
+        document.execCommand("copy");
+        console.log(message);
+        // Hiển thị thông báo đã sao chép
+        showToast(message);
       }
 
       // Event listener for copying smart contract address

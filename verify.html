@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>ECOFUSION - DASHBOARD</title>
+    <title>ECOFUSION - ACCOUNT</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
@@ -60,6 +60,10 @@
     <!-- main CSS
             ============================================ -->
     <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
     <!-- style CSS
             ============================================ -->
     <link rel="stylesheet" href="style.css" />
@@ -180,7 +184,7 @@
               <li>
                 <a href="/index.html"> Home</a>
               </li>
-              
+
               <li>
                 <a href="/transaction.html">Transaction</a>
               </li>
@@ -205,179 +209,96 @@
     <!-- Start Status area -->
     <div class="notika-status-area">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-            <div
-              class="wb-traffic-inner notika-shadow sm-res-mg-t-30 tb-res-mg-t-30"
-            >
-              <div class="website-traffic-ctn summary">
-                <h2><span class="content">Summary</span></h2>
-                <div class="sumary-detail">
-                  <p class="content">Refferal member</p>
-                  <p class="content value">0</p>
-                </div>
-                <div class="sumary-detail">
-                  <p class="content">Sales network</p>
-                  <div class="number"><p class="content value counter">2900</p><p class="content value">EFT</p></div>
-                </div>
-                <div class="sumary-detail">
-                  <p class="content">Direct bonus</p>
-                  <div class="number"><p class="content value counter">2800</p><p class="content value">EFT</p></div>
-                </div>
-                <div class="sumary-detail">
-                  <p class="content">Indirect bonus</p>
-                  <div class="number"><p class="content value counter">2700</p><p class="content value">EFT</p></div>
-                </div>
-                <div class="sumary-detail">
-                  <p class="content">Direct override bonus</p>
-                  <div class="number"><p class="content value counter">2600</p><p class="content value">EFT</p></div>
-                </div>
-                <div class="sumary-detail">
-                  <p class="content">Indirect orverride bonus</p>
-                  <div class="number"><p class="content value counter">2500</p><p class="content value">EFT</p></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-            <div
-              class="wb-traffic-inner notika-shadow sm-res-mg-t-30 tb-res-mg-t-30"
-              style="display: flex; flex-direction: column"
-            >
-              <div class="website-traffic-ctn summary" style="line-height: 37px;">
-                <h2><span class="content" >Wallet</span></h2>
-                <div class="sumary-detail">
-                  <p class="content">USDT</p>
-                  <p class="content counter value">50000</p>
-                </div>
-                <div class="sumary-detail">
-                  <p class="content">EFT</p>
-                  <p class="content counter value">50000</p>
-                </div>
-                <button class="btn-grad">View transaction</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-            <div
-              class="wb-traffic-inner notika-shadow sm-res-mg-t-30 tb-res-mg-t-30"
-            >
-              <div class="website-traffic-ctn summary" style="line-height: 27px;">
-                <h2><span class="content">Your package</span></h2>
-                <div class="sumary-detail">
-                  <p class="content">NFT X DIAMOND</p>
-                </div>
-                <div class="sumary-detail">
-                  <p class="content">Your Rank</p>
-                  <p class="content value">----</p>
-                </div>
-                <div class="sumary-detail">
-                  <p class="content">Plan Included</p>
-                </div>
-                <div class="sumary-detail">
-                  <p class="content">Maxout percent</p>
-                  <p class="content value">400%</p>
-                </div>
-                <div class="sumary-detail">
-                  <p class="content">Maxout Remainning</p>
-                  <p class="content value">0 EFT / 2,000 EFT</p>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="row table-row">
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div
               class="wb-traffic-inner notika-shadow sm-res-mg-t-30 tb-res-mg-t-30"
             >
-              <div class="website-traffic-ctn summary">
-                <h2 class="content">Token Information</h2>
-                <div class="sumary-detail">
-                  <p class="content">Name</p>
-                  <p class="content value">EFT</p>
+            <div>
+                <div class="p-2">
+                    <h4 class="content">Verify Account</h4>
                 </div>
-                <div class="sumary-detail">
-                  <p class="content">Symbol</p>
-                  <p class="content value">EFT</p>
+                <div class="p-3">
+                    <div>
+                        <div class="row">
+                            <div class="col-12">
+                                    <div class="alert alert-success d-flex align-items-center p-5 mb-10">
+                                        <!--begin::Svg Icon | path: icons/duotune/general/gen048.svg-->
+                                        <span class="svg-icon svg-icon-2hx svg-icon-success me-4">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path opacity="0.3" d="M20.5543 4.37824L12.1798 2.02473C12.0626 1.99176 11.9376 1.99176 11.8203 2.02473L3.44572 4.37824C3.18118 4.45258 3 4.6807 3 4.93945V13.569C3 14.6914 3.48509 15.8404 4.4417 16.984C5.17231 17.8575 6.18314 18.7345 7.446 19.5909C9.56752 21.0295 11.6566 21.912 11.7445 21.9488C11.8258 21.9829 11.9129 22 12.0001 22C12.0872 22 12.1744 21.983 12.2557 21.9488C12.3435 21.912 14.4326 21.0295 16.5541 19.5909C17.8169 18.7345 18.8277 17.8575 19.5584 16.984C20.515 15.8404 21 14.6914 21 13.569V4.93945C21 4.6807 20.8189 4.45258 20.5543 4.37824Z" fill="currentColor"></path>
+                                                <path d="M10.5606 11.3042L9.57283 10.3018C9.28174 10.0065 8.80522 10.0065 8.51412 10.3018C8.22897 10.5912 8.22897 11.0559 8.51412 11.3452L10.4182 13.2773C10.8099 13.6747 11.451 13.6747 11.8427 13.2773L15.4859 9.58051C15.771 9.29117 15.771 8.82648 15.4859 8.53714C15.1948 8.24176 14.7183 8.24176 14.4272 8.53714L11.7002 11.3042C11.3869 11.6221 10.874 11.6221 10.5606 11.3042Z" fill="currentColor"></path>
+                                            </svg>
+                                        </span>
+                                        <div class="d-flex flex-column">
+                                            <h4 class="mb-1 text-success">Approved</h4>
+                                            <span>Your account has been successfully verified.</span>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+    
+                        <div class="row">
+                            <div class="col-12 mb-5">
+                                <span class="content"><small>You need to complete the following steps to verify your account</small></span>
+                            </div>
+                        </div>
+                        <div class="row g-5 g-xl-8">
+                            <div class="col-12 col-sm-4">
+                                <a href="#" class="card bg-body hoverable card-xl-stretch mb-xl-8">
+                                    <div class="card-body">
+                                        <span class="svg-icon svg-icon-gray-100 svg-icon-3x ms-n1">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path opacity="0.3" d="M18 21.6C16.3 21.6 15 20.3 15 18.6V2.50001C15 2.20001 14.6 1.99996 14.3 2.19996L13 3.59999L11.7 2.3C11.3 1.9 10.7 1.9 10.3 2.3L9 3.59999L7.70001 2.3C7.30001 1.9 6.69999 1.9 6.29999 2.3L5 3.59999L3.70001 2.3C3.50001 2.1 3 2.20001 3 3.50001V18.6C3 20.3 4.3 21.6 6 21.6H18Z" fill="currentColor"></path>
+                                                <path d="M12 12.6H11C10.4 12.6 10 12.2 10 11.6C10 11 10.4 10.6 11 10.6H12C12.6 10.6 13 11 13 11.6C13 12.2 12.6 12.6 12 12.6ZM9 11.6C9 11 8.6 10.6 8 10.6H6C5.4 10.6 5 11 5 11.6C5 12.2 5.4 12.6 6 12.6H8C8.6 12.6 9 12.2 9 11.6ZM9 7.59998C9 6.99998 8.6 6.59998 8 6.59998H6C5.4 6.59998 5 6.99998 5 7.59998C5 8.19998 5.4 8.59998 6 8.59998H8C8.6 8.59998 9 8.19998 9 7.59998ZM13 7.59998C13 6.99998 12.6 6.59998 12 6.59998H11C10.4 6.59998 10 6.99998 10 7.59998C10 8.19998 10.4 8.59998 11 8.59998H12C12.6 8.59998 13 8.19998 13 7.59998ZM13 15.6C13 15 12.6 14.6 12 14.6H10C9.4 14.6 9 15 9 15.6C9 16.2 9.4 16.6 10 16.6H12C12.6 16.6 13 16.2 13 15.6Z" fill="currentColor"></path>
+                                                <path d="M15 18.6C15 20.3 16.3 21.6 18 21.6C19.7 21.6 21 20.3 21 18.6V12.5C21 12.2 20.6 12 20.3 12.2L19 13.6L17.7 12.3C17.3 11.9 16.7 11.9 16.3 12.3L15 13.6V18.6Z" fill="currentColor"></path>
+                                            </svg>
+                                        </span>
+                                        <div class="content fw-bold fs-2 mb-2 mt-5">1. Account Information</div>
+                                        <div class="fw-semibold content">Provide personal information</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-12 col-sm-4">
+                                <a href="#" class="card bg-dark hoverable card-xl-stretch mb-xl-8">
+                                    <div class="card-body">
+                                        <span class="svg-icon svg-icon-gray-100 svg-icon-3x ms-n1">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path opacity="0.3" d="M18 21.6C16.3 21.6 15 20.3 15 18.6V2.50001C15 2.20001 14.6 1.99996 14.3 2.19996L13 3.59999L11.7 2.3C11.3 1.9 10.7 1.9 10.3 2.3L9 3.59999L7.70001 2.3C7.30001 1.9 6.69999 1.9 6.29999 2.3L5 3.59999L3.70001 2.3C3.50001 2.1 3 2.20001 3 3.50001V18.6C3 20.3 4.3 21.6 6 21.6H18Z" fill="currentColor"></path>
+                                                <path d="M12 12.6H11C10.4 12.6 10 12.2 10 11.6C10 11 10.4 10.6 11 10.6H12C12.6 10.6 13 11 13 11.6C13 12.2 12.6 12.6 12 12.6ZM9 11.6C9 11 8.6 10.6 8 10.6H6C5.4 10.6 5 11 5 11.6C5 12.2 5.4 12.6 6 12.6H8C8.6 12.6 9 12.2 9 11.6ZM9 7.59998C9 6.99998 8.6 6.59998 8 6.59998H6C5.4 6.59998 5 6.99998 5 7.59998C5 8.19998 5.4 8.59998 6 8.59998H8C8.6 8.59998 9 8.19998 9 7.59998ZM13 7.59998C13 6.99998 12.6 6.59998 12 6.59998H11C10.4 6.59998 10 6.99998 10 7.59998C10 8.19998 10.4 8.59998 11 8.59998H12C12.6 8.59998 13 8.19998 13 7.59998ZM13 15.6C13 15 12.6 14.6 12 14.6H10C9.4 14.6 9 15 9 15.6C9 16.2 9.4 16.6 10 16.6H12C12.6 16.6 13 16.2 13 15.6Z" fill="currentColor"></path>
+                                                <path d="M15 18.6C15 20.3 16.3 21.6 18 21.6C19.7 21.6 21 20.3 21 18.6V12.5C21 12.2 20.6 12 20.3 12.2L19 13.6L17.7 12.3C17.3 11.9 16.7 11.9 16.3 12.3L15 13.6V18.6Z" fill="currentColor"></path>
+                                            </svg>
+                                        </span>
+                                        <div class="content fw-bold fs-2 fs-2 fw-bold mt-5">2. Identity Verification Documents</div>
+                                        <div class="fw-semibold content">Provide your ID/Passport photo</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-12 col-sm-4">
+                                <a href="#" class="card bg-warning hoverable card-xl-stretch mb-xl-8">
+                                    <div class="card-body">
+                                        <span class="svg-icon svg-icon-white svg-icon-3x ms-n1">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path opacity="0.3" d="M18 21.6C16.3 21.6 15 20.3 15 18.6V2.50001C15 2.20001 14.6 1.99996 14.3 2.19996L13 3.59999L11.7 2.3C11.3 1.9 10.7 1.9 10.3 2.3L9 3.59999L7.70001 2.3C7.30001 1.9 6.69999 1.9 6.29999 2.3L5 3.59999L3.70001 2.3C3.50001 2.1 3 2.20001 3 3.50001V18.6C3 20.3 4.3 21.6 6 21.6H18Z" fill="currentColor"></path>
+                                                <path d="M12 12.6H11C10.4 12.6 10 12.2 10 11.6C10 11 10.4 10.6 11 10.6H12C12.6 10.6 13 11 13 11.6C13 12.2 12.6 12.6 12 12.6ZM9 11.6C9 11 8.6 10.6 8 10.6H6C5.4 10.6 5 11 5 11.6C5 12.2 5.4 12.6 6 12.6H8C8.6 12.6 9 12.2 9 11.6ZM9 7.59998C9 6.99998 8.6 6.59998 8 6.59998H6C5.4 6.59998 5 6.99998 5 7.59998C5 8.19998 5.4 8.59998 6 8.59998H8C8.6 8.59998 9 8.19998 9 7.59998ZM13 7.59998C13 6.99998 12.6 6.59998 12 6.59998H11C10.4 6.59998 10 6.99998 10 7.59998C10 8.19998 10.4 8.59998 11 8.59998H12C12.6 8.59998 13 8.19998 13 7.59998ZM13 15.6C13 15 12.6 14.6 12 14.6H10C9.4 14.6 9 15 9 15.6C9 16.2 9.4 16.6 10 16.6H12C12.6 16.6 13 16.2 13 15.6Z" fill="currentColor"></path>
+                                                <path d="M15 18.6C15 20.3 16.3 21.6 18 21.6C19.7 21.6 21 20.3 21 18.6V12.5C21 12.2 20.6 12 20.3 12.2L19 13.6L17.7 12.3C17.3 11.9 16.7 11.9 16.3 12.3L15 13.6V18.6Z" fill="currentColor"></path>
+                                            </svg>
+                                        </span>
+                                        <div class="content fw-bold fs-2 mb-2 mt-5">3. Selfie Photo</div>
+                                        <div class="fw-semibold content">Provide your selfie photo</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="sumary-detail">
-                  <p class="content">Smart Contract Address</p>
-                  <p class="content value smartcontract" id="smartcontract">
-                    0x3A72d1c47197Cc7DF6d4D28dADbc25dcB09DA55C
-                  </p>
-                </div>
-              </div>
-              <div class="toast-container" id="toastContainer"></div>
+            </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- End Status area-->
 
-    <div class="notika-status-area">
-      <div class="container">
-        <div class="row table-row">
-          <div class="col-12">
-            <div class="data-table-area">
-              <div class="data-table-list">
-                <div class="basic-tb-hd">
-                  <h2 class="content">Member statistic</h2>
-                  <button class="btn-grad">View members</button>
-                </div>
-                <div class="table-responsive">
-                  <table id="data-table-basic" class="table table-striped">
-                    <thead>
-                      <tr>
-                        <th><span class="content">Username</span></th>
-                        <th><span class="content">STAKE2EARN</span></th>
-                        <th><span class="content">Type</span></th>
-                      </tr>
-                    </thead>
-                    <tbody class="content">
-                      <tr>
-                        <td>Tiger Nixon</td>
-                        <td>
-                          <span class="counter">13241</span><small> EFT</small>
-                        </td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td><span class="content">Garrett Winters</span></td>
-                        <td>
-                          <span class="counter content">121241</span><small class="content"> EFT</small>
-                        </td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td>Ashton Cox</td>
-                        <td>
-                          <span class="counter">124121</span><small> EFT</small>
-                        </td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td><span class="content">Garrett Winters</span></td>
-                        <td>
-                          <span class="counter content">12415</span><small class="content"> EFT</small>
-                        </td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td>Airi Satou</td>
-                        <td>
-                          <span class="counter">1241</span><small> EFT</small>
-                        </td>
-                        <td></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
     <!-- jquery
 		============================================ -->
     <script src="js/vendor/jquery-1.12.4.min.js"></script>
@@ -529,64 +450,5 @@
     <!-- main JS
 		============================================ -->
     <script src="js/main.js"></script>
-    <script>
-      const toastContainer = document.getElementById("toastContainer");
-      const smartContractElement = document.getElementById("smartcontract");
-
-      // Function to shorten the smart contract address for small devices
-      function shortenAddress(address) {
-        if (window.innerWidth < 768) {
-          return `${address.trim().slice(0, 4)}...${address.trim().slice(-4)}`;
-        }
-        return address;
-      }
-
-      // Update the smart contract address display on page load
-      smartContractElement.textContent = shortenAddress(
-        smartContractElement.textContent
-      );
-      // Function to create and show toast
-      function showToast(message) {
-        const toast = document.createElement("div");
-        toast.classList.add("toast");
-        toast.textContent = message;
-        toastContainer.appendChild(toast);
-
-        // Show the toast
-        setTimeout(() => {
-          toast.classList.add("show");
-        }, 10);
-
-        // Hide the toast after 3 seconds
-        setTimeout(() => {
-          toast.classList.remove("show");
-          // Remove toast from DOM after animation
-          setTimeout(() => {
-            toast.remove();
-          }, 500);
-        }, 3000);
-      }
-
-      // Event listener for copying smart contract address
-      smartContractElement.addEventListener("click", function () {
-        const smartContractText = this.textContent;
-        navigator.clipboard
-          .writeText(smartContractText)
-          .then(function () {
-            showToast("Smart Contract Address copied to clipboard!");
-          })
-          .catch(function (error) {
-            showToast("Failed to copy address.");
-            console.error("Failed to copy: ", error);
-          });
-      });
-
-      // Optional: Add a resize event listener to update the address if the screen is resized
-      window.addEventListener("resize", function () {
-        smartContractElement.textContent = shortenAddress(
-          smartContractElement.textContent
-        );
-      });
-    </script>
   </body>
 </html>
