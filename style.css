@@ -1011,8 +1011,6 @@ li a {
   .folder.open::before {
     transform: rotate(90deg); /* Rotate icon when open */
   }
-</style>
-<style>
     .wb-traffic-inner {
       min-height: 200px; /* Set minimum height */
       display: flex;
